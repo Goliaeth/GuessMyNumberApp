@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Nick/AndroidStudioProjects/GuessMyNumberApp/app/src/main/res/drawable/background_circle_blue.xml" value="0.329" />
+        <entry key="..\:/Users/Nick/AndroidStudioProjects/GuessMyNumberApp/app/src/main/res/drawable/background_circle_purple.xml" value="0.329" />
+        <entry key="..\:/Users/Nick/AndroidStudioProjects/GuessMyNumberApp/app/src/main/res/drawable/ic_arrow_downward.xml" value="0.329" />
+        <entry key="..\:/Users/Nick/AndroidStudioProjects/GuessMyNumberApp/app/src/main/res/drawable/ic_arrow_upward.xml" value="0.329" />
+        <entry key="..\:/Users/Nick/AndroidStudioProjects/GuessMyNumberApp/app/src/main/res/drawable/ic_success.xml" value="0.157" />
         <entry key="..\:/Users/Nick/AndroidStudioProjects/GuessMyNumberApp/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
       </map>
     </option>
