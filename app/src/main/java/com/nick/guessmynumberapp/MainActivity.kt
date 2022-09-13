@@ -7,7 +7,7 @@ import com.nick.guessmynumberapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    var number: Int = 5
+    private var number: Int = 5
 
     private lateinit var binding: ActivityMainBinding
 
@@ -22,21 +22,22 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun clickDownwardArrow(view: View) {
-        if (number == 5) {
-            number = 3
-            printTheQuestion()
-        } else if (number == 3) {
-            number = 2
-            printTheQuestion()
-        } else if (number == 2)  {
-            number = 1
-            printTheQuestion()
-        } else if (number == 8) {
-            number = 7
-            printTheQuestion()
-        } else if (number == 7) {
-            number = 6
-            printTheQuestion()
+        when (number) {
+            5 -> {
+                guessTheNumber(3)
+            }
+            3 -> {
+                guessTheNumber(2)
+            }
+            2 -> {
+                guessTheNumber(1)
+            }
+            8 -> {
+                guessTheNumber(7)
+            }
+            7 -> {
+                guessTheNumber(6)
+            }
         }
     }
 
@@ -49,18 +50,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun clickUpwardArrow(view: View) {
-        if (number == 3) {
-            number = 4
-            printTheQuestion()
-        } else if (number == 5) {
-            number = 8
-            printTheQuestion()
-        } else if (number == 8) {
-            number = 9
-            printTheQuestion()
-        } else if (number ==9) {
-            number = 10
-            printTheQuestion()
+        when (number) {
+            3 -> {
+                guessTheNumber(4)
+            }
+            5 -> {
+                guessTheNumber(8)
+            }
+            8 -> {
+                guessTheNumber(9)
+            }
+            9 -> {
+                guessTheNumber(10)
+            }
         }
     }
 
@@ -71,8 +73,13 @@ class MainActivity : AppCompatActivity() {
         printTheQuestion()
     }
 
-    fun printTheQuestion() {
+    private fun printTheQuestion() {
         binding.questionTextView.text = String.format(resources.getString(R.string.str_question), number)
+    }
+
+    private fun guessTheNumber(myNumber: Int) {
+        number = myNumber
+        printTheQuestion()
     }
 
 }
